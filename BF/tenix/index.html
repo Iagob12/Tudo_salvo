@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tenix</title>
+    <link rel="stylesheet" href="./src/style.css">
+</head>
+<body>
+    <header class="wrapper">
+        <h1>Tenix</h1>
+    </header>
+    <div class="linha"></div>
+
+    <div class="retangulo">         
+        <button class="novo">Adicionar tênis</button>
+    </div>
+    
+    <div class="container" id="produtosContainer"> 
+        <!-- Aqui os tênis serão listados dinamicamente -->
+    </div>
+
+    <!-- Popup para Modificar um Produto -->
+    <div id="popup" class="popup" style="display: none;">
+        <div class="popup-content">
+            <h3>Modificar produto</h3>
+            <label for="novoNome">Novo nome do produto:</label>
+            <input type="text" id="novoNome" placeholder="Novo nome do produto">
+            <label for="novoPreco">Novo preço do produto:</label>
+            <input type="text" id="novoPreco" placeholder="Novo preço do produto">
+            <label for="novoImagem">Nova imagem (URL):</label>
+            <input type="text" id="novoImagem" placeholder="Nova imagem (URL)">
+            <br>
+            <button id="salvarButton">Salvar</button>
+            <button id="closeButton">Fechar</button>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+
+    <footer></footer>
+</body>
+</html>
